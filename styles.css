@@ -17,21 +17,11 @@ html {
     scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
 }
 
-@font-face {
-    font-family: "Steph";
-    src: url("fonts/steph-font.ttf");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Steph";
-    src: url("fonts/steph-font-bold.ttf");
-    font-weight: bold;
-}
 
 body {
-    font-family: 'Steph', sans-serif;
+    font-family: 'Calibri', 'Segoe UI', sans-serif;
 }
+
 
 a {
     color: var(--text-color);
@@ -510,4 +500,31 @@ footer {
     #leave-message-section {
         padding: 3rem 1rem; /* Adjust padding for smaller screens */
     }
+
+    .key-findings-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .key-findings-text {
+        flex: 1;
+        text-align: left;
+    }
+
+    .key-findings-image {
+        flex: 1;
+    }
+
+    .key-findings-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
 }
