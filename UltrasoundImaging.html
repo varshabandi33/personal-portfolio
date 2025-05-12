@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A-Mode and B-Mode Beam-forming for Ultrasound Imaging</title>
+  <link rel="stylesheet" href="DentalEase.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="INO-page">
+<header>
+  <h1>Projects</h1>
+</header>
+
+<main>
+  <section>
+    <div class="project-intro-full">
+      <h2>A-Mode and B-Mode Beam-forming for Ultrasound Imaging</h2>
+      <p class="project-subtitle">University of Waterloo &middot; 2021</p>
+      <div class="project-intro">
+        <div class="project-description">
+          <p>
+            This project focused on processing and visualizing ultrasound imaging data using both A-mode
+            (amplitude mode) and B-mode (brightness mode) techniques. Implemented entirely in C++, the program handled
+            raw ultrasound data through a custom-designed linked list structure to efficiently store and manage scan
+            lines. Data points within each scan were sorted using a bubble sort algorithm to enhance signal clarity
+            and identify peak echoes.
+          </p>
+
+          <p>
+            In A-mode, the amplitude of echo signals was plotted over time to represent object depth and location.
+            In B-mode, multiple A-mode signals were combined and visualized in 2D, producing grayscale images that
+            reveal spatial positioning and density variations of internal structures. The final B-mode display was
+            overlaid with measurement markers and spatial grids to allow accurate distance estimation.
+          </p>
+
+          <p>
+            This project demonstrated real-time signal processing, memory management, and algorithm implementation,
+            offering insights into medical ultrasound system development using low-level programming and data
+            structuring.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-details">
+      <h3>Key Results</h3>
+      <div class="key-findings-paired">
+
+        <!-- A-mode Results -->
+        <div class="finding-graph-pair">
+          <div class="project-block">
+            <h4><i class="fas fa-wave-square"></i> A-mode Signal Peaks:</h4>
+            <ul>
+              <li>Captured echo amplitude over time to determine depth of reflectors</li>
+              <li>Peaks in the plot represent interfaces between different materials</li>
+              <li>Used bubble sort to isolate dominant echo responses</li>
+            </ul>
+          </div>
+          <div class="project-graph">
+            <a href="images/amode.png" target="_blank">
+              <img src="images/amode.png" alt="A-mode data plot">
+            </a>
+            <p class="caption">Figure 1: A-mode ultrasound data showing peak reflection signals</p>
+          </div>
+        </div>
+
+        <!-- B-mode Results -->
+        <div class="finding-graph-pair">
+          <div class="project-block">
+            <h4><i class="fas fa-th"></i> B-mode Visualization:</h4>
+            <ul>
+              <li>Combined A-mode scan lines into a 2D grayscale image</li>
+              <li>Visualized internal structures based on reflection strength</li>
+              <li>Grid overlay allows accurate spatial measurement of features</li>
+            </ul>
+          </div>
+          <div class="project-graph">
+            <a href="images/bmode.png" target="_blank">
+              <img src="images/bmode.png" alt="B-mode grid image">
+            </a>
+            <p class="caption">Figure 2: B-mode reconstruction with spatial overlays and measurement annotations</p>
+          </div>
+        </div>
+
+        <!-- Linked List Structure -->
+        <div class="finding-graph-pair">
+          <div class="project-block">
+            <h4><i class="fas fa-link"></i> Linked List Data Structure:</h4>
+            <ul>
+              <li>Implemented in C++ to manage dynamic A-mode scan line storage</li>
+              <li>Each node stored echo samples and metadata for a single scan line</li>
+              <li>Enabled efficient memory handling and sequential reconstruction of B-mode data</li>
+            </ul>
+          </div>
+          <div class="project-graph">
+            <a href="images/linkedlist.png" target="_blank">
+              <img src="images/linkedlist.png" alt="Linked list memory structure">
+            </a>
+            <p class="caption">Figure 3: Linked list design storing 128 elements per scan line</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; Varsha Bandi</p>
+</footer>
+
+</body>
+</html>

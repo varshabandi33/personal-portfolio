@@ -1,83 +1,69 @@
-<!-- projects.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mechanically Enhanced Prosthetic Foot</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="prosthetic.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
 </head>
-<body class="is-preload">
-<div id="wrapper">
-    <header id="headgit commit -m "Left-aligned key findings section and updated styles"er">
-        <h1>Projects</h1>
-    </header>
+<div>
+<body class="prosthetic-page">
+<header>
+    <h1>Projects</h1>
+</header>
 
-    <div id="main">
-        <!-- <section id="project1" class="main">
-            <header class="major">
-                <h2>Ipsum Consequat</h2>
-            </header>
-            <p>Description of the first project here...</p>
-        </section>
-
-        <section id="dental-ease" class="main">
-            <header class="major">
-                <h2>Dental-Ease</h2>
-            </header>
-            <p>EMG-based assistive tooth brushing device for below-shoulder amputees. Details, goals, images, etc.</p>
-        </section> -->
-
-        <section id="project3" class="main">
-            <div class="project-layout">
-                <div class="project-text">
-                    <h2>Mechanically Enhanced Prosthetic Foot</h2>
-                    <p>This project explores the design and mechanical validation of a simplified prosthetic foot model. Prosthetics play a vital role in restoring or enhancing human mobility,
-                        and understanding the mechanical properties of their materials is essential to ensure functionality and
-                        durability. Using PLA filament and results from tensile testing, a custom material profile was created
-                        for use in SolidWorks simulations. Finite Element Analysis (FEA) was then performed to analyze how the
-                        prosthetic responds to realistic loading—specifically a 190 N force applied at the ankle. To verify the
-                        accuracy of the simulation, results were compared against manual hand calculations. This comparison
-                        helped confirm the reliability of FEA for predicting structural performance.</p>
-                </div>
+<main>
+    <section>
+        <div class="project-intro-full">
+            <h2>Mechanically Enhanced Prosthetic Foot</h2>
+            <p class="project-subtitle">University of Waterloo &middot; 2023</p>
+            <div class="project-intro">
                 <div class="project-image">
-                    <img src="images/footprosthetic.jpg" alt="Prosthetic Foot" />
+                    <img src="images/footprosthetic.jpg" alt="Prosthetic Foot">
+                </div>
+                <div class="project-description">
+                    <p>This project explores the design and mechanical validation of a simplified prosthetic foot model. Prosthetics play a vital role in restoring or enhancing human mobility, and understanding the mechanical properties of their materials is essential to ensure functionality and durability. Using PLA filament and tensile testing results, a custom material profile was created in SolidWorks. Finite Element Analysis (FEA) simulated realistic loading—specifically a 190 N force at the ankle—and results were validated against hand calculations.</p>
                 </div>
             </div>
+        </div>
 
-            <div class="key-findings-text">
-                <h3>Key Findings</h3>
+        <div class="project-details">
+            <h3>Key Findings</h3>
 
-                <h4>Material Properties of PLA:</h4>
-                <ul>
-                    <li>Young’s Modulus: <strong>463.37 MPa</strong></li>
-                    <li>Yield Stress: <strong>16.8 MPa</strong></li>
-                    <li>Ultimate Stress: <strong>28.89 MPa</strong></li>
-                    <li>Density: <strong>1.25 g/cm³</strong></li>
-                </ul>
-
-                <h4>Initial Validation of SolidWorks Simulation:</h4>
-                <ul>
-                    <li>A <strong>190 N</strong> load applied to ankle in both hand calculations and SolidWorks.</li>
-                    <li><strong>Hand-calculated displacement:</strong> 0.281 m</li>
-                    <li><strong>SolidWorks displacement:</strong> 0.0117 m</li>
-                    <li>Differences are due to simplified hand model assumptions (smaller moment of inertia).</li>
-                </ul>
-
-                <h4>Trend Verification:</h4>
-                <ul>
-                    <li>Displacement decreased as force decreased in both models, confirming realistic behavior.</li>
-                </ul>
-
-                <h4>Design Improvements:</h4>
-                <ul>
-                    <li>I-beam cross-section added to increase moment of inertia.</li>
-                    <li>Widened and filleted ankle base for improved load distribution.</li>
-                    <li>Volume constrained to <strong>11,800.37 mm³</strong></li>
-                </ul>
+            <div class="project-blocks-container">
+                <div class="project-block">
+                    <h4>Material Properties of PLA:</h4>
+                    <ul>
+                        <li>Young’s Modulus: <strong>463.37 MPa</strong></li>
+                        <li>Yield Stress: <strong>16.8 MPa</strong></li>
+                        <li>Ultimate Stress: <strong>28.89 MPa</strong></li>
+                        <li>Density: <strong>1.25 g/cm³</strong></li>
+                    </ul>
+                </div>
+                <div class="project-block">
+                    <h4>Validation of Simulation:</h4>
+                    <ul>
+                        <li>Hand-calculated displacement: <strong>0.281 m</strong></li>
+                        <li>SolidWorks displacement: <strong>0.0117 m</strong></li>
+                        <li>Difference due to simplified hand model assumptions.</li>
+                    </ul>
+                </div>
+                <div class="project-block">
+                    <h4>Design Improvements:</h4>
+                    <ul>
+                        <li>I-beam cross-section increased moment of inertia.</li>
+                        <li>Widened and filleted ankle base for better load distribution.</li>
+                        <li>Final volume: <strong>11,800.37 mm³</strong></li>
+                    </ul>
+                </div>
             </div>
 
             <h3>Results</h3>
-            <table border="1" cellpadding="8" cellspacing="0">
+            <table>
                 <thead>
                 <tr>
                     <th></th>
@@ -104,15 +90,17 @@
                 </tbody>
             </table>
 
-            <a href="https://drive.google.com/file/d/1VfdnIluLyGWO0B5ajDAik6qh32332k7Q/view" class="button"
-               target="_blank">View Full Report</a>
-        </section>
+            <a href="https://drive.google.com/file/d/1VfdnIluLyGWO0B5ajDAik6qh32332k7Q/view" class="button" target="_blank">
+                View Full Report
+            </a>
+        </div>
+    </section>
+</main>
 
-    </div>
+<footer>
+    <p>&copy; Varsha Bandi</p>
+</footer>
 
-    <footer id="footer">
-        <p>&copy; Varsha Bandi</p>
-    </footer>
-</div>
 </body>
+
 </html>

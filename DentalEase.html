@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DentalEase - Assistive Dental Hygiene Device</title>
+    <link rel="stylesheet" href="DentalEase.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="INO-page">
+<header>
+    <h1>Projects</h1>
+</header>
+
+<main>
+    <section>
+        <div class="project-intro-full">
+            <h2>DentalEase - Assistive Dental Hygiene Device</h2>
+            <p class="project-subtitle">University of Waterloo &middot; 2024</p>
+            <div class="project-intro">
+                <div class="project-image">
+                    <img src="images/schematic.jpg" alt="INO eye movement visualization">
+                </div>
+                <div class="project-description">
+                    <p>
+                        DentalEase is an affordable and user-friendly dental hygiene device designed for individuals
+                        with forearm amputations. It minimizes the need for repetitive brushing by automating the
+                        toothbrush's motion when the user lifts their arm. The device features a mechanical cradle
+                        with components that were modeled in SolidWorks and fabricated using 3D printing and laser
+                        cutting. It also includes an Arduino-based EMG signal processing system that filters, amplifies,
+                        and detects muscle activity to trigger brushing. The design incorporates lightweight materials,
+                        carefully controlled motion, and signal smoothing to ensure that users can brush their teeth
+                        with comfort, independence, and confidence.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-details">
+
+
+            <div class="project-blocks-container">
+                <div class="project-block">
+                    <h4><i class="fas fa-cogs"></i> Mechanism Design:</h4>
+                    <ul>
+                        <li>Used a 3:1 gear ratio with a lightweight servomotor to achieve 300 strokes per minute</li>
+                        <li>Limited motion range to 0.25 inches for safe and effective brushing</li>
+                        <li>Toothbrush cradle adapted to fit standard manual toothbrushes</li>
+                    </ul>
+                </div>
+
+                <div class="project-block">
+                    <h4><i class="fas fa-brain"></i> EMG Signal Processing:</h4>
+                    <ul>
+                        <li>EMG signals sourced from trapezius muscle contractions</li>
+                        <li>Signal processed through amplifier, band-pass filter, rectifier, and comparator</li>
+                        <li>Arduino interprets on/off signals to activate brushing for one minute per contraction</li>
+                    </ul>
+                </div>
+
+                <div class="project-block">
+                    <h4><i class="fas fa-tools"></i> Materials and Fabrication:</h4>
+                    <ul>
+                        <li>3D printed frame using PLA for strength and lightweight support</li>
+                        <li>Laser-cut acrylic gears for better precision</li>
+                        <li>Plastic bowl and compression sleeve used for comfortable arm support</li>
+                    </ul>
+                </div>
+
+                <div class="project-block">
+                    <h4><i class="fas fa-users"></i> User-Centered Design:</h4>
+                    <ul>
+                        <li>Device attaches comfortably at the elbow and activates with arm movement</li>
+                        <li>No need for specialized toothbrushes</li>
+                        <li>Designed with accessibility and ease of use in mind</li>
+                    </ul>
+                </div>
+
+                <div class="project-block">
+                    <h4><i class="fas fa-wrench"></i> Challenges and Iteration:</h4>
+                    <ul>
+                        <li>Improvised fasteners and added cradle support for stability</li>
+                        <li>Switched to peak detection to eliminate repeated activations</li>
+                        <li>Adjusted circuit values through real-time testing for optimal filtering</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Key Factors Visuals -->
+            <div class="key-findings-paired">
+
+
+
+                <!-- Video Block -->
+                <div class="finding-graph-pair">
+                    <div class="project-block">
+                        <h4><i class="fas fa-video"></i> Device in Action:</h4>
+                        <ul>
+                            <li>Demonstrates the assembled DentalEase prototype in action</li>
+                            <li>Toothbrush cradle performs continuous brushing motion automatically</li>
+                            <li>Activated by muscle contractions detected from the trapezius using EMG signals</li>
+                            <li>Arduino receives the signal and powers the servomotor for one minute</li>
+                            <li>Back-and-forth motion replicates the speed of manual brushing (300 strokes/min)</li>
+                        </ul>
+                    </div>
+                    <div class="project-graph">
+                        <div class="video-container">
+                            <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/8JiMWwPdigA"
+                                    title="DentalEase Demonstration"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <p class="caption">Video: EMG-triggered brushing mechanism in action</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <a href="https://www.canva.com/design/DAGLHCDsgC8/VbqYGpes1V-pTMzk2SvtwA/edit?utm_content=DAGLHCDsgC8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="button" target="_blank">
+                View Design Breakdown
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Varsha Bandi</p>
+</footer>
+
+</body>
+</html>

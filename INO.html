@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neural Modeling for INO Diagnosis</title>
+    <link rel="stylesheet" href="INO.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="INO-page">
+<header>
+    <h1>Projects</h1>
+</header>
+
+<main>
+    <section>
+        <div class="project-intro-full">
+            <h2>Neural Modeling for INO Diagnosis</h2>
+            <p class="project-subtitle">University of Waterloo &middot; 2025</p>
+            <div class="project-intro">
+                <div class="project-image">
+                    <img src="images/INO.jpg" alt="INO eye movement visualization">
+                </div>
+                <div class="project-description">
+                    <p>Internuclear Ophthalmoplegia (INO) is a neurological condition often linked to multiple
+                        sclerosis, brain trauma, and viral infections, particularly in older adults. It disrupts
+                        eye coordination, typically causing difficulty with inward eye movement (adduction) and
+                        involuntary eye jerking (nystagmus) in the opposite eye. Although INO can often be treated
+                        based on its cause, accurate diagnosis remains a challenge due to the subtlety of symptoms.
+
+                        To support clinical diagnosis, this project developed a computational model to estimate
+                        neural input from eye position data and detect patterns indicative of INO. Simulations
+                        compared healthy and INO-affected eye movements, highlighting key differences in abduction
+                        delays and coordination. The model was validated using real patient data and effectively
+                        identified hallmark characteristics of INO. With further testing, including EEG integration
+                        and expanded datasets, this tool could strengthen early clinical detection and improve
+                        patient outcomes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-details">
+
+            <h3>Methodology</h3>
+            <div class="project-blocks-container">
+                <div class="project-block">
+                    <h4><i class="fas fa-cogs"></i> Model Reconstruction:</h4>
+                    <ul>
+                        <li>Adapted McSpadden’s saccade model to estimate neural input from eye position data.</li>
+                        <li>Reversed original approach to derive muscle activation profiles using MATLAB.</li>
+                    </ul>
+                </div>
+                <div class="project-block">
+                    <h4><i class="fas fa-dna"></i> Data Processing & Derivatives:</h4>
+                    <ul>
+                        <li>Used smoothing spline (SPAPS) to clean raw eye position data.</li>
+                        <li>Calculated velocity and acceleration through differentiable splines.</li>
+                    </ul>
+                </div>
+                <div class="project-block">
+                    <h4><i class="fas fa-brain"></i> Simulation & Validation:</h4>
+                    <ul>
+                        <li>Simulated neural activations and compared them with published literature data.</li>
+                        <li>Re-ran the model using extracted activations to validate output accuracy.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <h3>Key Findings</h3>
+
+            <!-- Container to hold all key findings and graphs -->
+            <div class="key-findings-paired">
+
+                <!-- Block 1: Healthy Eye Movement -->
+                <div class="finding-graph-pair">
+                    <div class="project-block">
+                        <h4><i class="fas fa-eye"></i> Healthy Eye Movement:</h4>
+                        <ul>
+                            <li>Smooth, symmetrical saccades</li>
+                            <li>Well-coordinated muscle and tendon responses</li>
+                            <li>No signs of glissadic overshoot or instability</li>
+                        </ul>
+                    </div>
+                    <div class="project-graph">
+                        <a href="images/Healthy.jpg" target="_blank">
+                            <img src="images/Healthy.jpg" alt="Healthy vs INO eye movement">
+                        </a>
+                        <p class="caption">Figure 1: Healthy Eye Movement Simulation Results</p>
+                    </div>
+
+                </div>
+
+
+
+                <!-- Block 2: INO Movement Signatures -->
+                <div class="finding-graph-pair">
+                    <div class="project-block">
+                        <h4><i class="fas fa-exclamation-triangle"></i> INO Movement Signatures:</h4>
+                        <ul>
+                            <li>Irregular muscle activation and longer pulse width</li>
+                            <li>Uncoordinated neural signals and tendon imbalances</li>
+                            <li>Glissadic overshoot and delayed stabilization</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-graph">
+                        <a href="images/Unhealthy.jpg" target="_blank">
+                            <img src="images/Unhealthy.jpg" alt="Muscle Activation">
+                        </a>
+                        <p class="caption">Figure 2: INO Eye Movement Simulation Results</p>
+                    </div>
+
+                </div>
+
+                <!-- Block 3: Sensitivity to Subtle INO Cases -->
+                <div class="finding-graph-pair">
+                    <div class="project-block">
+                        <h4><i class="fas fa-microscope"></i> Sensitivity to Subtle INO Cases:</h4>
+                        <ul>
+                            <li>Model identified INO-like patterns even without obvious delays</li>
+                            <li>Highlights neural instability not visible in VDI analysis</li>
+                            <li>Promising tool for early detection and deeper clinical insight</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <a href="images/VaryingDelay.jpg" target="_blank">
+                            <img src="images/VaryingDelay.jpg" alt="Muscle Activation">
+                        </a>
+                        <p class="caption">Figure 3: Varying Delay Simulation Results</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="https://drive.google.com/file/d/109cOlfd0Yo8_tmy0cPa4n1gLL2GPx1KN/view?usp=sharing" class="button" target="_blank">
+                View Full Report
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Varsha Bandi</p>
+</footer>
+
+</body>
+</html>

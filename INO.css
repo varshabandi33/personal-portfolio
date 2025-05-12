@@ -1,0 +1,266 @@
+/* INO Page Custom Styles */
+
+body.INO-page {
+  font-family: 'Calibri', 'Segoe UI', sans-serif;
+  background-color: #fdfdfc;
+  color: #2c2c2c;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3c33;
+  margin: 2rem auto 1rem;
+  text-align: center;
+  padding-left: 1rem;
+}
+
+section {
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+h1, h2, h3, h4 {
+  color: #37463d;
+  font-family: 'Calibri', sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: #bfd6c4;
+  bottom: -10px;
+  left: 0;
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+h4 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+p, li {
+  font-size: 1rem;
+  color: #444;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.project-intro-full {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-intro-full h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2d3c33;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.project-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.project-image {
+  flex: 1;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+  flex: 2;
+  text-align: left;
+}
+
+.project-details {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.project-blocks-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: nowrap;
+}
+
+.project-block {
+  background-color: #bfd6c4;
+  color: #1a1c20;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 32%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.project-block h4::before {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #4a5d50;
+  margin-right: 0.5rem;
+}
+
+.project-block ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.project-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-details th, .project-details td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.button {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #bfd6c4;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #a9cbb5;
+}
+
+/* 🟢 KEY FINDINGS: Paired Blocks and Graphs */
+.key-findings-paired {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.finding-graph-pair {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.finding-graph-pair .project-block {
+  flex: 1;
+  min-width: 280px;
+  background-color: #bfd6c4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.finding-graph-pair .project-graph {
+  flex: 1;
+  min-width: 280px;
+}
+
+.finding-graph-pair .project-graph img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.finding-graph-pair .project-graph img:hover {
+  transform: scale(1.02);
+}
+
+.finding-graph-pair .caption {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.finding-graph-pair .project-graph a {
+  display: block;
+}
+
+/* 📱 Responsive for mobile */
+@media (max-width: 768px) {
+  .project-intro {
+    flex-direction: column;
+  }
+
+  .project-blocks-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-block {
+    width: 100%;
+  }
+
+  .finding-graph-pair {
+    flex-direction: column;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f5f5f5; /* optional, for visual contrast */
+    color: #333;
+    font-size: 0.95rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+}
